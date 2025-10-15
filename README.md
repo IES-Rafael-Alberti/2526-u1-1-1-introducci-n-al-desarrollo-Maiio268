@@ -22,6 +22,8 @@ Apoyate en los siguientes recursos para realizar la práctica:
   - **Correo electrónico:** mmonber326@g.educaand.es
   - **Iniciales del Alumno/Grupo:** MMB
 ## Descripción de la Actividad
+- Descripción: Trabajar con tres lenguajes de programación diferentes: uno compilado, uno interpretado y uno que genera código intermedio ejecutado en una máquina virtual, escribiendo un pequeño programa en cada lenguaje y respondiendo a las preguntas en el README.md, usando capturas de pantalla para ilustrar las respuestas y el lenguaje de marcas markdown para formatear el texto. 
+- Objetivos: Evaluar la relación entre software y hardware, clasificar lenguajes de programación y comprender los diferentes procesos de ejecución (compilación, interpretación y máquinas virtuales), utilizando ejemplos de lenguajes interpretados, compilados y que generan código intermedio para su ejecución en una máquina virtual. 
 [Descripción detallada de la actividad, objetivos, y contexto necesario para comprenderla. Explicar en qué consiste la actividad y qué se espera que el alumno desarrolle o implemente.]
 
 ## Instrucciones de Compilación y Ejecución
@@ -46,10 +48,12 @@ Apoyate en los siguientes recursos para realizar la práctica:
 
 ## Desarrollo de la Actividad
 ### Descripción del Desarrollo
-[Explicación de cómo se ha abordado el desarrollo de la actividad, incluyendo las decisiones de diseño, estructura del código y enfoque de resolución de problemas. Se recomienda adjuntar diagramas o capturas de pantalla si es necesario.]
+Se ha abordado el desarrollo de la actividad creando 3 archivos y escribiendo el programa en 3 lenguajes de programación diferentes, contestando a las preguntas propuestas por el docente en este mismo archivo readme formateando el texto con el lenguaje de marcas markdown.
 
 ### Código Fuente
-[Aquí se incluirá un enlace directo a los archivos de código fuente en el repositorio, por ejemplo, si se está usando GitHub: `src/main.java` o algún enlace directo.]
+[Código en Python](/src/programa.py)
+[Código en Java](/src/programa.jav)
+[Código en C](/src/programa.c)
 
 ### Ejemplos de Ejecución
 - **Entrada 1:** Descripción de la entrada y valor de prueba.
@@ -77,3 +81,22 @@ Apuntes del docente.
    - Si se entrega en formato PDF o Google Docs, asegúrate de cumplir con el mínimo y máximo de folios establecidos.
 4. **Compilación y Ejecución:**
    - Detalla claramente cómo compilar y ejecutar el código, incluyendo las instrucciones en el archivo `README.md`.
+
+# PREGUNTAS
+## 5.1. Criterio de Evaluación 1.a: Relación entre Software y Hardware
+
+1. **Describe cómo el software que has creado se ha relacionado con los componentes físicos del dispositivo (memoria RAM, procesador, periféricos, etc.) durante la ejecución de los tres lenguajes (interpretado, compilado y en máquina virtual). Puntos a incluir:**
+- **Cómo se almacenaron los datos en memoria.**
+- **Qué hizo el procesador con el código.**
+- **Si se interactuó con periféricos, como la pantalla para mostrar la salida.**
+Cuando el usuario escribe, el teclado (dispositivo de entrada) detecta una pulsación y envía señales al ordenador, estas señales se convierten en datos que el software puede usar, y estos datos se recogen y se almacenan temporalmente en la memoria RAM, después la CPU lee y ejecuta las instrucciones almacenadas en la RAM, procesa esos datos de entrada y produce la salida a través de la pantalla (dispositivo de salida).
+
+## 5.2. Criterio de Evaluación 1.c: Diferenciación entre Código Fuente, Código Objeto y Ejecutable
+**Preguntas:**
+
+1. **Explica cómo el código fuente que escribiste se transformó en código objeto y ejecutable en el caso de los lenguajes compilados. ¿Generaste archivos intermedios (código objeto)? ¿Qué nombres tomaron estos archivos?**
+
+2. **Para los lenguajes interpretados, describe cómo el código fuente se ejecutó directamente, sin generar archivos de código objeto o ejecutable.**
+
+3. **Para el lenguaje que genera código intermedio (Java, C#), explica cómo el código fuente se transformó en código intermedio (bytecode) y cómo este fue ejecutado por la máquina virtual.**
+
