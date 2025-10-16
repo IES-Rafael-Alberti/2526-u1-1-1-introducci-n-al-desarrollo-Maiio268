@@ -82,16 +82,15 @@ Apuntes del docente.
 4. **Compilación y Ejecución:**
    - Detalla claramente cómo compilar y ejecutar el código, incluyendo las instrucciones en el archivo `README.md`.
 
-Ejecución del programa en Python:
-![Imagen ejecucion Python](/ejec_python.png)
+## | Capturas Ejecuciones | 
+### Ejecución del programa en Python:
+![Imagen ejecucion Python](/capturas/ejec_python.png)
 
-Ejecución del programa en Java:
-![Imagen ejecucion java](/ejec_java.png)
+### Ejecución del programa en Java:
+![Imagen ejecucion java](/capturas/ejec_java.png)
 
-Ejecución del programa en C:
-![Imagen ejecucion C]()
-
-
+### Ejecución del programa en C:
+![Imagen ejecucion C](/capturas/ejec_c.png)
 
 
 # PREGUNTAS
@@ -131,6 +130,34 @@ La máquina virtual juega un papel muy importante en la ejecución del código, 
 - **Nivel de abstracción (alto nivel vs bajo nivel).**
 - **Paradigma de programación (imperativo, orientado a objetos, funcional,...).**
 2. **Explica qué características de estos lenguajes influyeron en su clasificación. Es decir, ahonde en las razones por las que cada lenguaje pertenece a una categoría específica.**
-1) Python: 
-- Interpretado: ya que el código fuente de este lenguaje es interpretado por un intérprete, es un programa que lee línea por línea y ejecuta al instante. Es lento en tiempo de ejecución pero más flexible y fácil de probar, ya que no hay compilación.
-- 
+1) **Python:**
+- **Interpretado:** ya que el código fuente de este lenguaje es interpretado por un intérprete, es un programa que lee línea por línea y ejecuta al instante. Es lento en tiempo de ejecución pero más flexible y fácil de probar, ya que no hay compilación.
+- **Alto nivel:** porque es un lenguaje diseñado para que sea fácil de entender y de escribir, aunque tiene un control menos profundo sobre los detalles de bajo nivel del hardware.
+- **Soporta varios paradigmas: Imperativo**, (Python puede ser usado en estilo imperativo) el programador da instrucciones detalladas para que el programa se ejecute (ejemplo: al sumar 2 números en Python, es imperativo porque especifica los pasos exactos). **Orientado a objetos:** en Python también se puede organizar el código en objetos, los cuales encapsulan datos y comportamientos. **Funcional:** no es un lenguaje puramente funcional, pero tiene muchas características propias de la programación funcional: permite crear funciones pequeñas sin nombre, útil para operaciones rápidas, las funciones se pueden asignar a variables, pasar como argumentos y devolver desde otras funciones...
+2) **C:**
+- **Compilado:** ya que el código fuente que se escribe en C es compilado (traducido) a código máquina y una vez compilado, se genera un archivo ejecutable que el procesador puede entender y ejecutar, además, es un lenguaje rápido respecto al tiempo de ejecución y necesita ser recompilado para cada plataforma.
+- **Bajo nivel:** porque es un lenguaje que está más cerca del lenguaje máquina, por lo que es más difícil de escribir y entender, aunque ofrece acceso directo a los recursos del sistema.
+- **Imperativo:** el programador da instrucciones detalladas para que el programa se ejecute (ejemplo: al sumar 2 números en C, es imperativo porque especifica los pasos exactos).
+3) **Java:**
+- **Compilado a bytecode y ejecutado en la JVM:** el código fuente se compila con javac, se convierte en bytecode y la JMV interpreta o compila ese bytecode a código máquina para que después, finalmente, sea ejecutado.
+- **Alto nivel:** porque es un lenguaje diseñado para ser fácil de entender y escribir por los humanos, ofrece muchas funcionalidades que ayudan a los desarrolladores, aunque tiene menos control sobre los detalles de bajo nivel del hardware.
+- **Orientado a objetos:** Java organiza el código en objetos (son instancias de clases), los cuales encapsulan datos y comportamientos.
+
+## 5.5. Criterio de Evaluación 1.f: Evaluación de Herramientas Utilizadas en el Desarrollo
+**Preguntas:**
+
+1. **Para cada uno de los tres lenguajes (interpretado, compilado y en máquina virtual), describe las herramientas que utilizaste en el proceso de desarrollo:**
+- **Sistema operativo (¿en qué sistema ejecutaste el programa?):** He ejecutado los 3 programas en Windows
+
+- **Editor de texto o IDE (¿dónde escribiste el código?):** He utilizado el IDE Visual Studio Code para escribir los 3 códigos.
+
+- **Compilador o intérprete (¿cómo se transformó o ejecutó el código?):** Depende del lenguaje, en Python, el código se ejecutó directamente al pulsar en ejecutar, en C, el código se compiló a código máquina y se crearon archivos .obj, el código objeto se transforma en código ejecutable creándose un archivo ejecutable gracias al proceso llamado linking, en Java el código fuente se compiló con javac, se conviertió en bytecode y la JMV convirtió ese ese bytecode a código máquina, por último, el procesador ejecuta ese código. 
+
+- **Depurador (si lo usaste, ¿cómo lo empleaste para encontrar errores?):** Lo he usado para familiarizarme con la depurazión, he podido encontrar errores poniendo puntos de ruptura en ciertas líneas del código para ver cómo se iba ejecutando el programa, en un programa así de pequeño no es tan útil ya que no es necesario usarlo para entender la ejecución, pero sería gran ayuda en programas más grandes que contengan más operaciones.
+
+- **Sistema de gestión de versiones (si lo usaste, ¿cómo guardaste las versiones del código?):** He guardado las versiones del código con los comandos de Git, que sirven para guardar el código en la staging area, después hacer commits y, por último, hacer varios push para subir los cambios al repositorio en GitHub.
+
+- **Otras herramientas Añade alguna herramienta más a la lista. ¿Cómo te ayudó en el desarrollo?** Me han ayudado bastantes los pack de extensiones oficiales de Microsft de Python, Java y C/C++, ya que, por ejemplo, la de Python incluía la extensión oficial de Python pero también herramientas de depuración, linting, formateo de código y testing.
+
+## Conclusión Final:
+Respecto al rendimiento, los lenguajes compilados (como C), ofrecen un mejor rendimiento ya que el código fuente se traduce directamente a código máquina antes de ejecutarse. Mientras que los lenguajes interpretados (como Python) destacan por su facilidad de uso y flexibilidad durante el desarrollo, ya que se ejecutan línea a línea sin ser compilados, aunque tienen una menor velocidad de ejecución. Los lenguajes que usan máquina virtual (como Java) logran un equilibrio, porque generan un código intermedio (bytecode) que la JVM traduce a código máquina, estos lenguajes tienen ventajas como portabilidad y optimización. En resumen, cada lenguaje tiene sus ventajas y desventajas respecto a la velocidad, facilidad y compatibilidad, por eso mismo cada uno se usa según el objetivo que se quiera conseguir.
