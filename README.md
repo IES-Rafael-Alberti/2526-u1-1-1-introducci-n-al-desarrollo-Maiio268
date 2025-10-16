@@ -82,6 +82,18 @@ Apuntes del docente.
 4. **Compilación y Ejecución:**
    - Detalla claramente cómo compilar y ejecutar el código, incluyendo las instrucciones en el archivo `README.md`.
 
+Ejecución del programa en Python:
+![Imagen ejecucion Python](/ejec_python.png)
+
+Ejecución del programa en Java:
+![Imagen ejecucion java](/ejec_java.png)
+
+Ejecución del programa en C:
+![Imagen ejecucion C]()
+
+
+
+
 # PREGUNTAS
 ## 5.1. Criterio de Evaluación 1.a: Relación entre Software y Hardware
 
@@ -95,8 +107,30 @@ Cuando el usuario escribe, el teclado (dispositivo de entrada) detecta una pulsa
 **Preguntas:**
 
 1. **Explica cómo el código fuente que escribiste se transformó en código objeto y ejecutable en el caso de los lenguajes compilados. ¿Generaste archivos intermedios (código objeto)? ¿Qué nombres tomaron estos archivos?**
+El código fuente es compilado (traducido) por un programa (que es el compilador), que transforma el código fuente en código objeto, que es un formato intermedio que la máquina está más cerca de entender. Al compilar un programa en un lenguaje compilado (C), se generan archivos intermedios de código objeto, estos archivos tienen la extensión .o o .obj, depende del sistema operativo. El código objeto es transformado en código ejecutable (ya la máquina puede entenderlo) mediante un proceso llamado enlazado (linking), el enlazador es una herramienta que coge los archivos de código objeto y los une en un solo archivo ejecutable.
 
 2. **Para los lenguajes interpretados, describe cómo el código fuente se ejecutó directamente, sin generar archivos de código objeto o ejecutable.**
+En los lenguajes interpretados (Python), el código fuente se ejecuta directamente gracias a un intérprete, que es un programa que lee el código línea por línea y ejecuta las instrucciones en tiempo real, no se crean archivos intermedios como en los lenguajes compilados.
 
 3. **Para el lenguaje que genera código intermedio (Java, C#), explica cómo el código fuente se transformó en código intermedio (bytecode) y cómo este fue ejecutado por la máquina virtual.**
+Una vez escrito el código fuente, se compila a código intermedio, en Java, este código se llama bytecode (se guarda en un archivo .class) y está diseñado para ser ejecutado por una máquina virtual (en el caso de Java, la JVM), la JVM (Java Virtual Machine) carga el archivo .class en memoria, verifica que el bytecode sea correcto e interpreta línea por línea las instrucciones del bytecode, también puede compilar partes de cñodigo con un compilador Just-In-Time (JIT), por último, la JVM ejecuta las instrucciones traducidas por el intérprete o el compilador JIT.
 
+## 5.3. Criterio de Evaluación 1.d: Generación de Código Intermedio para Máquinas Virtuales
+**Preguntas:**
+
+1. **Describe el proceso de generación de código intermedio (bytecode) en el lenguaje que utilizaste que emplea una máquina virtual (por ejemplo, Java o C#).**
+Vamos a tomar como ejemplo Java, el código fuente se compila con javac, un compilador que lo transforma a código intermedio (llamado bytecode) que está guardado dentro de un archivo .class, este archivo es cargado en memoria por la JVM, la cual verifica que el bytecode es correcto y lo interpreta línea a línea.
+
+2. **Explica qué rol juega la máquina virtual en la ejecución del código y cómo difiere de la ejecución directa en un sistema operativo como ocurre con los lenguajes compilados e interpretados.**
+La máquina virtual juega un papel muy importante en la ejecución del código, su rol es interpretar o compilar el código intermedio y traducirlo en instrucciones que el procesador puede entender. A diferencia de la ejecución directa si hablamos de los lenguajes compilados, la máquina virtual tiene una ventaja muy grande: la portabilidad, permite que el mismo código intermedio pueda ser ejecutado en cualquier plataforma (siempre que la plataforma tenga una máquina virtual compatible), es decir, no hace falta modificiar el código intermedio.
+## 5.4. Criterio de Evaluación 1.e: Clasificación de Lenguajes de Programación
+**Preguntas:**
+
+1. **Clasifica los tres lenguajes utilizados (interpretado, compilado y en máquina virtual) según su:**
+- **Modo de ejecución (interpretado vs compilado vs máquina virtual).**
+- **Nivel de abstracción (alto nivel vs bajo nivel).**
+- **Paradigma de programación (imperativo, orientado a objetos, funcional,...).**
+2. **Explica qué características de estos lenguajes influyeron en su clasificación. Es decir, ahonde en las razones por las que cada lenguaje pertenece a una categoría específica.**
+1) Python: 
+- Interpretado: ya que el código fuente de este lenguaje es interpretado por un intérprete, es un programa que lee línea por línea y ejecuta al instante. Es lento en tiempo de ejecución pero más flexible y fácil de probar, ya que no hay compilación.
+- 
